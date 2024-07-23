@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 	import logo from "./logo.svg";
 	import "./App.css";
-	import AppDescription from "./components/AppDescription.js";
 	import { BrowserRouter, Route } from "react-router-dom";
 	import HomeView from "./components/HomeView.js";
 	import AboutView from "./components/AboutView.js";
@@ -13,7 +12,6 @@ import React, { Component } from "react";
 			  <img src={logo} className="App-logo" alt="logo" />
 			  <h1 className="App-title">Welcome to React!</h1>
 			</header>
-			<AppDescription text="Benvenuto nella mia prima applicazione React!" />
 			<BrowserRouter>
 			  <div>
 				<Route exact path="/" component={HomeView}/>

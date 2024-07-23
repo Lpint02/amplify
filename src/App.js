@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 	import logo from "./logo.svg";
 	import "./App.css";
-	import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+	import AppDescription from "./components/AppDescription.js";
+	import { BrowserRouter, Route } from "react-router-dom";
 	import HomeView from "./components/HomeView.js";
 	import AboutView from "./components/AboutView.js";
 	class App extends Component {
@@ -12,14 +13,13 @@ import React, { Component } from "react";
 			  <img src={logo} className="App-logo" alt="logo" />
 			  <h1 className="App-title">Welcome to React!</h1>
 			</header>
-      <Router>
-          <div>
-            <Switch>
-              <Route exact path="/" component={HomeView} />
-              <Route path="/about" component={AboutView} />
-            </Switch>
-          </div>
-        </Router>
+			<AppDescription text="Benvenuto nella mia prima applicazione React!" />
+			<BrowserRouter>
+			  <div>
+				<Route exact path="/" component={HomeView}/>
+				<Route exact path="/about" component={AboutView}/>
+			  </div>
+			</BrowserRouter>
 		  </div>
 		);
 	  }

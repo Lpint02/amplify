@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+//import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -20,11 +20,11 @@ function App() {
           </nav>
         </header>
         <main>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-          </Switch>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
         </main>
       </div>
     </Router>

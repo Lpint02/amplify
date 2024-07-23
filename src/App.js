@@ -1,33 +1,27 @@
-//import logo from './logo.svg';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './components/home/Home';
-import About from './components/about/About';
-import Contact from './components/contact/Contact';
-import './App.css';
-
-
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <header className="App-header">
-          <nav>
-            <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-            </ul>
-          </nav>
-        </header>
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-      </div>
-    </Router>
-  );
-}
-export default App;
+import React, { Component } from "react";
+	import logo from "./logo.svg";
+	import "./App.css";
+	import AppDescription from "./components/AppDescription.js";
+	import { BrowserRouter, Route } from "react-router-dom";
+	import HomeView from "./components/HomeView.js";
+	import AboutView from "./components/AboutView.js";
+	class App extends Component {
+	  render() {
+		return (
+		  <div className="App">
+			<header className="App-header">
+			  <img src={logo} className="App-logo" alt="logo" />
+			  <h1 className="App-title">Welcome to React!</h1>
+			</header>
+			<AppDescription text="Benvenuto nella mia prima applicazione React!" />
+			<BrowserRouter>
+			  <div>
+				<Route exact path="/" component={HomeView}/>
+				<Route exact path="/about" component={AboutView}/>
+			  </div>
+			</BrowserRouter>
+		  </div>
+		);
+	  }
+	}
+	export default App;

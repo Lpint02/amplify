@@ -21,9 +21,9 @@ function App() {
         </header>
         <main>
           <Routes>
-            <Route exact path="/" Component={Home} />
-            <Route exact path="/about" Component={About} />
-            <Route exact path="/contact" Component={Contact} />
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/contact" element={<Contact />} />
           </Routes>
         </main>
       </div>

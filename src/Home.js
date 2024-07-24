@@ -9,11 +9,15 @@ const products = [
 ];
 
 function ProductButton({ link }) {
+    const [count, setCount] = useState(0);
+	function handleClick() {
+		setCount(count + 1);
+	  }
     return (
       <Link to={link}>
-        <button>
-          Go to section
-        </button>
+		<button onClick={handleClick}>
+		  Go to link (clicked {count} times)
+		</button>
       </Link>
     );
   }

@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
 const products = [
@@ -8,10 +9,15 @@ const products = [
   ];
 
   function ProductButton({ link }) {
+	const [count, setCount] = useState(0);
+	function handleClick() {
+		alert('You clicked me!');
+		setCount(count + 1);
+	  }
 	return (
 	  <a href={link} target="_blank" rel="noopener noreferrer">
-		<button>
-		  Go to link
+		<button onClick={handleClick}>
+		  Go to link (clicked {count} times)
 		</button>
 	  </a>
 	);

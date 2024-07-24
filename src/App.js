@@ -33,9 +33,11 @@ function App() {
 export default App;*/
 function MyButton() {
 	return (
-	  <button>
-		I'm a button
-	  </button>
+		<a href="https://pbs.twimg.com/profile_images/1193448180266029057/6f09jm6x_400x400.jpg" target="_blank" rel="noopener noreferrer">
+			<button>
+				I'm a button
+			</button>
+		</a>
 	);
   }
   

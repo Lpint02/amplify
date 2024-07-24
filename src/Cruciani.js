@@ -5,7 +5,6 @@ export default function Cruciani() {
     <div className="App">
     <header className="App-header">
       <h1>ITALIANIIIII</h1>
-      <h1>ITALIANIIIII</h1>
         <img 
           src="https://www.arabonormannaunesco.it/wp-content/uploads/2024/06/giuseppe-cruciani-20240621-arabonormannounesco.it_.jpg" 
           alt="Giuseppe Cruciani" 

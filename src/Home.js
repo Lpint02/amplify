@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
 
@@ -27,7 +27,7 @@ function ProductButton({ link }) {
       <li
         key={product.id}
         style={{
-          color: product.isEbreo ? 'red' : 'black',
+          color: product.isEbreo ? 'black' : 'black',
           marginBottom: '10px',
           display: 'flex',
           alignItems: 'center'

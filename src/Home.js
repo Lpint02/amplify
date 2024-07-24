@@ -3,7 +3,7 @@ import './App.css';
 import { Link } from 'react-router-dom';
 
 const products = [
-  { title: 'Spatalino', isEbreo: false, id: 1, link: '/spatalino' },
+  { title: 'Spatalino', isEbreo: false, id: 1, link: '/' },
   { title: 'Parenzo', isEbreo: true, id: 2, link: '/parenzo' },
   { title: 'Cruciani', isEbreo: false, id: 3, link: '/cruciani' },
 ];

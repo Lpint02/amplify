@@ -41,9 +41,12 @@ function MyButton() {
   
   export default function MyApp() {
 	return (
-	  <div>
-		<h1>Welcome to my app</h1>
-		<MyButton />
+	  <div className='App'>
+		<header className='App-header'>
+			<h1>Welcome to my app</h1>
+			<img src={logo} className="App-logo" alt="logo" />
+			<MyButton />
+		</header>
 	  </div>
 	);
   }

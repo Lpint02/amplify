@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const Form = () => {
     const [message, setMessage] = useState('');
-    const apiGatewayUrl = 'https://<API_GATEWAY_ID>.execute-api.<REGION>.amazonaws.com/<STAGE>/enqueue';
+    const apiGatewayUrl = 'https://rzf142a7hc.execute-api.us-east-1.amazonaws.com/prod/enqueue';
 
     const handleSubmit = async (e) => {
         e.preventDefault();

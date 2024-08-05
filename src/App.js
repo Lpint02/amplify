@@ -1,21 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import Parenzo from './Parenzo';
-import Cruciani from './Cruciani';
-import Spatalino from './Spatalino';
+import './App.css';
+import Form from './Form';
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/parenzo" element={<Parenzo />} />
-        <Route path="/cruciani" element={<Cruciani />} />
-        <Route path="/spatalino" element={<Spatalino />} />
-      </Routes>
-    </Router>
-  );
+    return (
+        <div className="App">
+            <header className="App-header">
+                <h1>Send Message to RabbitMQ</h1>
+                <Form />
+            </header>
+        </div>
+    );
 }
 
 export default App;
